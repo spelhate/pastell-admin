@@ -1,0 +1,86 @@
+form.card.p-2 .form-floating {
+    width: 70%;
+}
+#todo {
+    border-left-color: #f0ad4e;
+    border-left-style: solid;
+    margin-top: 20px;
+}
+form {
+    padding-top: 20px;
+    padding-right: 40px;
+}
+
+.profile-item {
+    padding-top: 20px;
+}
+
+.user-item p.card-text {
+        font-size: smaller;
+}
+
+.user-item {
+    padding: 5px;
+}
+
+#container-b {
+    border-left: solid 1px orange;
+}
+
+#user-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div#container-a {
+    display: block;
+    height: 700px;
+    overflow-y: auto;
+}
+
+i.bi-person-badge {
+    float: right;
+    margin-top: -10px;
+}
+
+.user-item .card.selected {
+    background-color: #333;
+    color: #fff;
+}
+
+.user-item .card label, .profile-item .card label {
+    cursor: pointer;
+}
+
+input#selected_orga {
+    font-size: large;
+    font-weight: 900;
+}
+
+#top {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    background: #fff;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#profiles .card {
+    box-shadow: 3px 3px 3px grey;
+}
+
+i.bi-collection {
+    float: right;
+    margin-top: -3px;
+}
+
+i.bi-bank {
+    padding-right: 5px;
+}
+form h6 {
+    margin-top: 9px;
+    padding-right: 10px;
+}
+

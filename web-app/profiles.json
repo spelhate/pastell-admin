@@ -1,0 +1,99 @@
+{ "profiles": [
+	{
+		"id": "Arretes-reglementaire-studio",
+		"roles":[
+			"Arretes-reglementaires:Annuler",
+			"Arretes-reglementaires:Archiver",
+			"Arretes-reglementaires:edition",
+			"Arretes-reglementaires:lecture",
+			"Arretes-reglementaires:Preparer",
+			"Arretes-reglementaires:Transmettre"
+		]
+	},
+	{
+		"id": "Arretes-individuels-studio",
+		"roles":[
+			"Arretes-individuels:Annuler",
+			"Arretes-individuels:Archiver",
+			"Arretes-individuels:edition",
+			"Arretes-individuels:lecture",
+			"Arretes-individuels:Preparer",
+			"Arretes-individuels:Transmettre",
+			"Arretes-individuels:Annuler",
+			"Arretes-individuels:Archiver",
+			"Arretes-individuels:edition",
+			"Arretes-individuels:lecture",
+			"Arretes-individuels:Preparer",
+			"Arretes-individuels:Transmettre"
+		]
+	},
+	{
+		"id": "Autres-studio",
+		"roles":[
+			"Autres:Annuler",
+			"Autres:Archiver",
+			"Autres:edition",
+			"Autres:lecture",
+			"Autres:Preparer",
+			"Autres:Transmettre"
+		]
+	},
+	{
+		"id": "Contrats-et-conventions-studio",
+		"roles":[
+			"Contrats-et-conventions:Annuler",
+			"Contrats-et-conventions:Archiver",
+			"Contrats-et-conventions:edition",
+			"Contrats-et-conventions:lecture",
+			"Contrats-et-conventions:Preparer",
+			"Contrats-et-conventions:Transmettre"
+		]
+	},
+	{
+		"id": "Deliberations-studio",
+		"roles":[
+			"Deliberations:Annuler",
+			"Deliberations:Archiver",
+			"Deliberations:edition",
+			"Deliberations:lecture",
+			"Deliberations:Preparer",
+			"Deliberations:Transmettre"
+		]
+	},
+	{
+		"id": "Documents-budgetaires-et-financiers-studio",
+		"roles":[
+			"Documents-budgetaires-et-financiers:Annuler",
+			"Documents-budgetaires-et-financiers:Archiver",
+			"Documents-budgetaires-et-financiers:edition",
+			"Documents-budgetaires-et-financiers:lecture",
+			"Documents-budgetaires-et-financiers:Preparer",
+			"Documents-budgetaires-et-financiers:Transmettre"
+		]
+	},
+	{
+		"id": "FluxFactureCPP",
+		"roles":[
+			"FluxFactureCPP"
+		]
+	},
+	{
+		"id": "PES_RETOUR",
+		"roles":[
+			"PES_RETOUR"
+		]
+	},
+	{
+		"id": "Actes génériques",
+		"roles":[
+			"userTech_ActesGenerique"
+		]
+	},
+	{
+		"id": "Helios génériques",
+		"roles":[
+			"userTech_HeliosGenerique"
+		]
+	}
+]
+}

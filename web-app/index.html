@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/keycloak-js@6.0.1/dist/keycloak.min.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+</head>
+<body onload="initKeycloak()">
+    <!-- your page content goes here -->
+    <div class="container-fluid">
+        <div class="offcanvas offcanvas-start w-25" tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="false">
+            <div class="offcanvas-header">
+                <h6 class="offcanvas-title d-none d-sm-block" id="offcanvas">Rechercher un organisme</h6>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body px-0">
+                <pastell-organisation name="Saisir les premières lettres de l'organisme" ></pastell-organisation>
+
+            </div>
+        </div>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand">Pastell profile admin</a>
+              <form class="d-flex">
+                  <h6 id="userid"></h6>
+                <!--<input id="searchEntities" class="form-control me-2" type="search" placeholder="Organismes..." aria-label="Search">-->
+                <button class="btn btn-outline-warning" onclick="logout();">logout</button>
+              </form>
+            </div>
+        </nav>
+        <div class="row">
+            <h6>Organisme sélectionné</h6>
+            <div class="col input-group mb-3">
+
+                <input id="selected_orga" type="text" class="form-control" aria-label="Organismes" disabled></input>
+                <button class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button" type="button" id="button-addon2"><i class="bi-bank" style="font-size: 1.5rem;"></i>Rechercher un organisme</button>
+
+            </div>
+        </div>
+        <div class="row">
+
+            <div id="container-a" class="col-6">
+                <div id="top">
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-primary">Utilisateurs de l'entité :</span>
+                        <span id="counter2" class="badge bg-primary rounded-pill">0</span>
+                        </h4>
+                </div>
+
+                <div id="user-list"></div>
+            </div>
+
+        <div class="col-6" id="container-b">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-primary">Profils pastell à appliquer :</span>
+                <button type="button" class="btn btn-outline-success" onclick="setProfiles();">Appliquer</button>
+            </h4>
+            <div id="profiles" class="row"></div>
+        </div>
+
+
+        </div>
+
+        <pastell-messages></pastell-messages>
+
+    </div>
+    <script src="./components/pastell-organisation.js"></script>
+    <script src="./components/pastell-messages.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

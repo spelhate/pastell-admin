@@ -1,0 +1,9 @@
+{
+  "realm": "your-realm",
+  "auth-server-url": "your keycloak url",
+  "ssl-required": "external",
+  "resource": "your cliend",
+  "public-client": true,
+  "confidential-port":  0,
+  "logout-url": "your logout url"
+}
