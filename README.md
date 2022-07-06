@@ -10,7 +10,7 @@ git clone https://github.com/spelhate/pastell-admin.git
 
 ```shell
 cd /var/www/html
-ln -s /path_to/pastell-admin/web-app pastell-admin
+sudo ln -s /path_to/pastell-admin/web-app pastell-admin
 ```
 
 ## Installation back
